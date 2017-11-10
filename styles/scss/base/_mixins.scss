@@ -1,0 +1,102 @@
+@mixin flexbox{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-between{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-center{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin button($btn-color, $btn-bg){
+  color: $btn-color;
+  background-color: $btn-bg;
+  padding: 15px 60px;
+  @include border-radius(50px);
+  cursor: pointer;
+  font-size: 18px;
+  font-family: $regular-font;
+  font-weight: bold;
+  border: none;
+}
+
+@mixin small-button($btn-color, $btn-bg){
+  color: $btn-color;
+  background-color: $btn-bg;
+  padding: 10px 25px;
+  @include border-radius(50px);
+  cursor: pointer;
+  font-family: $regular-font;
+  font-weight: bold;
+  border: none;
+  font-size: 15px;
+}
+
+@mixin article-title($title-color){
+  color: $title-color;
+  font-family: $regular-font;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+@mixin article-text($text-color){
+  color: $text-color;
+  font-family: $slab-font;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+@mixin placeholder-text($placeholder-color){
+  &::-moz-placeholder{
+    color: $placeholder-color;
+    font-size: 18px
+  }
+  &::-webkit-input-placeholder{
+    color: $placeholder-color;
+    font-size: 18px
+  }
+  &:-ms-input-placeholder{
+    color: $placeholder-color;
+    font-size: 18px
+  }
+  &::placeholder{
+    color: $placeholder-color;
+    font-size: 18px
+  }
+}
+
+@mixin placeholder-text-mob($placeholder-color){
+  &::-moz-placeholder{
+    color: $placeholder-color;
+    font-size: 12px
+  }
+  &::-webkit-input-placeholder{
+    color: $placeholder-color;
+    font-size: 12px
+  }
+  &:-ms-input-placeholder{
+    color: $placeholder-color;
+    font-size: 12px
+  }
+  &::placeholder{
+    color: $placeholder-color;
+    font-size: 12px
+  }
+}

@@ -1,0 +1,35 @@
+.our-news-header{
+  margin-bottom: 85px;
+}
+
+.news-list-articles{
+  @include flex-between;
+  flex-wrap: wrap;
+}
+.news-article{
+  width: 31%;
+  text-align: center;
+  margin-bottom: 30px;
+  h3{
+    @include article-title($dark-text);
+  }
+  p{
+    @include article-text($dark-text);
+    margin-bottom: 30px;
+  }
+  img{
+    border-top-left-radius: 5px;
+    border-top-radius-radius: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+
+  }
+}
+
+.read-more-news{
+  @include button($dark-text, $white-text);
+  &:hover{
+    background-color: #31353e;
+    color: #ffffff;
+  }
+}

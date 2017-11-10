@@ -1,0 +1,38 @@
+.top-footer{
+  background-color: $footer-bg;
+}
+.footer-list-block{
+  @include flexbox;
+  justify-content: space-around;
+  text-align: center;
+  a{
+    @include article-text($white-text);
+    line-height: 0;
+    cursor: pointer;
+    &:hover{
+      text-decoration: underline;
+  }
+  }
+}
+
+.footer-list{
+  li{
+    margin-bottom: 20px;
+  }
+}
+
+.bottom-footer{
+  @include background(linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%),
+          url("../../img/photo-1428660386617-8d277e7deaf2.png") no-repeat 50% 0);
+  background-size: cover;
+  padding: 150px 20px;
+
+  @include flex-center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  p{
+    @include article-text($white-text);
+
+  }
+}

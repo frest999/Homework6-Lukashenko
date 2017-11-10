@@ -1,0 +1,49 @@
+.newsletter-section{
+  @include background(linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%),
+          url("../../img/photo-1428660386617-8d277e7deaf2.png") no-repeat 50% 0);
+  background-size: cover;
+}
+
+.newsletter-block{
+  padding: 0 20px;
+  width: 600px;
+  margin: 0 auto;
+
+}
+
+.newsletter-header{
+  text-align: center;
+  h2{
+    @include article-title($white-text);
+    margin-bottom: 10px;
+  }
+  p{
+    @include article-text($white-text);
+    margin-bottom: 40px;
+  }
+}
+
+.email-form{
+  padding-left: 20px;
+  input{
+    width: 60%;
+    border: none;
+    padding: 20px 40px;
+    @include border-radius(50px);
+    @include placeholder-text($white-text);
+    background-color: rgba(234,234,234,0.3);
+    border: 1px solid $white-text;
+  }
+  button{
+    @include button($read-more-color, $read-more-bg);
+    padding: 17px 40px 19px;
+    width: 35%;
+    margin-left: -70px;
+    @include border-radius(50px);
+    &:hover{
+      background-color: $orange-btn-hover;
+      color: $white-text;
+  }
+  }
+}
+

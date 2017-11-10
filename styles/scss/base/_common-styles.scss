@@ -1,0 +1,27 @@
+*{
+  outline: none;
+}
+body{
+  background-color: $main-bg;
+}
+
+h2,h3,h4{
+  font-weight: bold;
+}
+
+.content{
+  width: $content;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section-padding{
+  padding: $sections-padding;
+}
+.section-header{
+  h2{
+    font-size: 30px;
+    font-family: $regular-font;
+    text-align: center;
+  }
+}

@@ -1,0 +1,276 @@
+
+@media (max-width: 1266px){
+  .content{
+    width: 90%;
+  }
+  .news-article{
+    width: 30%;
+  }
+}
+
+@media(max-width: 1050px){
+  .product-img {
+    height: 40%;
+  }
+}
+
+@media (max-width: 960px) {
+  .main-nav {
+    display: none;
+  }
+  .welcome-section {
+    padding-top: 50px;
+  }
+
+  .welcome-block {
+    h2 {
+      font-size: 50px;
+    }
+  }
+  .circle-img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .product-info {
+    width: 40%;
+    padding-top: 20px;
+  }
+
+  .product-img {
+    width: 500px;
+    height: 310px;
+  }
+  .product {
+    margin-bottom: 100px;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    &:nth-child(2n) {
+      .product-info {
+        order: 0;
+        margin-right: 20px;
+      }
+    }
+  }
+  .product-info {
+    width: 80%;
+    text-align: center;
+    p {
+      text-align: left;
+    }
+  }
+  .product-img {
+    width: 80%;
+  }
+  .read-more-news {
+    @include small-button($read-more-color, $read-more-bg);
+  }
+  .main-logo {
+    align-self: flex-start;
+  }
+
+  .mob-menu-block {
+    display: block;
+    text-align: right;
+  }
+  .mobile-menu {
+    display: none;
+    li {
+      padding: 10px;
+      text-align: center;
+    }
+    a {
+      cursor: pointer;
+      font-family: $slab-font;
+      &:hover {
+        color: $white-text;
+        background-color: $orange-btn-hover;
+        @include border-radius(20px);
+        padding: 5px 10px;
+        margin: 0 -10px;
+      }
+    }
+  }
+  .mob-menu {
+    background: url(../../img/icon-burger.png) no-repeat;
+    background-size: cover;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+  }
+  .mob-nav-checkbox {
+    display: none;
+    &:checked + .mobile-menu{
+      display: block;
+      }
+    }
+  }
+
+@media (max-width: 810px) {
+  .welcome-list-articles {
+    justify-content: center;
+  }
+  .welcome-article {
+    width: 40%;
+    &:last-child {
+      display: none;
+    }
+  }
+  .circle-img {
+    height: 130px;
+    width: 130px;
+  }
+
+  .news-list-articles {
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-article {
+    width: 70%;
+    margin-bottom: 60px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media(max-width: 680px) {
+  .welcome-article {
+    width: 40%;
+    &:nth-child(2n+1) {
+      display: none;
+    }
+  }
+  .read-more{
+    @include small-button($read-more-color,$read-more-bg);
+  }
+  .welcome-block {
+    h2 {
+      font-size: 40px;
+    }
+  }
+  .email-form {
+    padding-left: 20px;
+    input {
+      width: 50%;
+    }
+    button{
+      width: 40%;
+    }
+  }
+  .bottom-footer{
+    p{
+      width: 70%;
+    }
+  }
+  .newsletter-block{
+    width: 450px;
+  }
+}
+
+@media (max-width: 540px) {
+  .welcome-block{
+    h2{
+      font-size: 30px;
+    }
+    .subtitle{
+      font-size: 20px;
+    }
+  }
+  .welcome-article{
+    width: 70%;
+  }
+  .product-img{
+    width: 400px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 490px) {
+  .section-padding{
+   padding: $sections-padding - 50px;
+  }
+  .newsletter-block{
+    width: 300px;
+  }
+  .email-form {
+    padding-left: 20px;
+    input {
+      width: 80%;
+      padding: 10px 20px;
+    }
+    button{
+      width: 95%;
+      margin:0;
+      margin-top: 10px;
+      padding: 10px 20px;
+    }
+  }
+  .product-img{
+    width: 300px;
+    height: 200px;
+  }
+  .top-footer{
+    display: none;
+  }
+  .bottom-footer{
+    padding: 50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 405px) {
+  .section-padding{
+    padding: 50px 0;
+  }
+  .welcome-section{
+    height: auto;
+    padding: 50px 0;
+  }
+  .welcome-block {
+    h2 {
+      font-size: 23px;
+    }
+    .subtitle {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+  }
+  .main-logo{
+   width: 120px;
+  }
+  .welcome-article{
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  .our-news-header{
+    margin-bottom: 50px;
+  }
+  .newsletter-block{
+    width: 60%;
+    p{
+      font-size: 12px;
+    }
+  }
+  .email-form {
+    input {
+      @include placeholder-text-mob($white-text);
+      font-size: 10px;
+      width: 81%;
+    }
+    button{
+      padding: 5px 0;
+      font-size: 12px;
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+

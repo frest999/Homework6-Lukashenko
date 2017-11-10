@@ -1,0 +1,38 @@
+.main-header{
+  @include flex-between;
+  padding: 50px 20px;
+  h1{
+    position: absolute;
+    text-indent: -9999px;
+  }
+}
+
+.main-logo{
+  width: 160px;
+  max-width: 100%;
+}
+
+.main-nav{
+  @include flex-between;
+
+  li{
+    color: $dark-text;
+    font-size: $txt-size;
+    margin-right: 45px;
+    &:last-child{
+     margin-right: 0;
+   }
+    a{
+      cursor: pointer;
+      font-family: $slab-font;
+      &:hover{
+        color:$white-text;
+        background-color: $orange-btn-hover;
+        @include border-radius(20px);
+        padding: 10px 15px;
+        margin: 0 -15px;
+      }
+      }
+    }
+  }
+
